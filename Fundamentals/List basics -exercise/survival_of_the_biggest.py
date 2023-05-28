@@ -1,6 +1,7 @@
 numbers = list(map(int, input().split()))
 n = int(input())
 
-numbers = sorted(numbers)[n:]
+for _ in range(n):
+    numbers.remove(min(numbers))
 
 print(", ".join(map(str, numbers)))
